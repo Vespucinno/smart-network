@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="TJKT Smart Network - Solusi Jaringan Terbaik, Handal, Aman, dan Efisien dengan Teknologi Modern & Support 24/7.">
+    <title>TJKT Smart Network || Solusi Jaringan Terbaik</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Cursor Spotlight Glow Effect -->
+    <div id="cursor-spotlight"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Header Navigation -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="#main" class="nav-brand">
+                    <img src="./images/gundam-logo.png" alt="TJKT Logo" class="logo-img"
+                        onerror="this.src='./images/logo.png'">
+
+                </a>
+
+                <ul class="nav-list">
+                    <li><a href="#main" class="nav-link active">Home</a></li>
+                    <li><a href="#services" class="nav-link">Layanan</a></li>
+                    <li><a href="#about" class="nav-link">Tentang Kami</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimoni</a></li>
+                    <li><a href="#contact" class="nav-link">Kontak</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <div class="sys-badge">
+                        <span class="dot"></span> SYS: ONLINE
+                    </div>
+                    <a href="https://wa.me/+6285124002246" class="btn btn-secondary nav-phone-btn">
+                        <i class="fa-solid fa-phone btn-icon"></i>
+                    </a>
+                    <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-backdrop" id="mobile-backdrop"></div>
+    <div class="mobile-nav" id="mobile-drawer">
+        <div class="sys-badge" style="width: fit-content; margin-bottom: 20px;">
+            <span class="dot"></span> SYS: ONLINE
+        </div>
+        <a href="#main" class="mobile-link">Home</a>
+        <a href="#services" class="mobile-link">Layanan</a>
+        <a href="#about" class="mobile-link">Tentang Kami</a>
+        <a href="#testimonials" class="mobile-link">Testimoni</a>
+        <a href="#contact" class="mobile-link">Kontak</a>
+        <a href="" class="btn btn-primary" style="margin-top: 20px;">
+            <i class="fa-solid fa-phone">0851-2400-2246</i>
+        </a>
+    </div>
+
+    <!-- MAIN HERO SECTION -->
+    <section id="main">
+        <canvas id="net-canvas" aria-hidden="true"></canvas>
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-content" data-fly>
+                    <div class="hud-tag">
+                        <i class="fa-solid fa-microchip"></i> SYSTEM ARCHITECTURE v3.0
+                    </div>
+                    <h1 class="hero-title">
+                        Solusi Jaringan <br>
+                        <span class="highlight">Terbaik & Handal</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Anda memerlukan konsultasi untuk membangun jaringan yang handal, aman, dan efisien? Kami siap
+                        membantu mengoptimalkan infrastruktur digital Anda dengan standar performa enterprise presisi
+                        tinggi.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Hubungi Kami</span>
+                            <i class="fa-solid fa-paper-plane btn-icon"></i>
+                        </a>
+                        <a href="#calculator" class="btn btn-secondary">
+                            <span>Hitung Estimasi</span>
+                            <i class="fa-solid fa-calculator btn-icon"></i>
+                        </a>
+                    </div>
+
+                    <!-- Live Stats HUD -->
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number"><span class="counter" data-target="99">0</span>.9%</div>
+                            <div class="stat-label">SLA Uptime Guarantee</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number"><span class="counter" data-target="500">0</span>+</div>
+                            <div class="stat-label">Node Terkonfigurasi</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">&lt;<span class="counter" data-target="1">0</span>ms</div>
+                            <div class="stat-label">Response Latency</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual" data-fly data-fly-speed="1.2">
+                    <div class="mecha-frame">
+                        <img src="./images/server.jpg" alt="TJKT Network Control Center" class="mecha-img"
+                            onerror="this.src='./images/network-engineer.png'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <div class="hud-tag"><i class="fa-solid fa-layer-group"></i> SERVICE MATRIX</div>
+                <h2>Layanan Kami</h2>
+                <p>Spesialisasi kami dalam membangun infrastruktur jaringan tingkat tinggi untuk performa tanpa
+                    kompromi.</p>
+                <div class="hud-line"></div>
+            </div>
+
+            <!-- Services Filter Tabs -->
+            <div class="services-filter" data-reveal style="--reveal-delay: 0.1s;">
+                <button class="filter-btn active" data-filter="all">Semua Layanan</button>
+                <button class="filter-btn" data-filter="instalasi">Instalasi</button>
+                <button class="filter-btn" data-filter="konsultasi">Konsultasi</button>
+                <button class="filter-btn" data-filter="server">Server & Cloud</button>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card" data-category="instalasi" data-reveal style="--reveal-delay: 0s;">
+                    <div class="service-img-wrapper">
+                        <span class="service-badge">NET // 01</span>
+                        <img src="./images/instalasi-jaringan.jpg" alt="Instalasi Jaringan" class="service-img">
+                    </div>
+                    <h3>Instalasi Jaringan</h3>
+                    <p>Jasa pembuatan jaringan dari nol dengan installer yang berpengalaman, penataan kabel presisi, dan
+                        uji performa sinyal menyeluruh.</p>
+                    <button class="btn btn-secondary open-modal-btn" data-service="instalasi">
+                        Pelajari Lebih Lanjut <i class="fa-solid fa-chevron-right btn-icon"></i>
+                    </button>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card" data-category="konsultasi" data-reveal style="--reveal-delay: 0.15s;">
+                    <div class="service-img-wrapper">
+                        <span class="service-badge">CONS // 02</span>
+                        <img src="./images/it-support.jpg" alt="Konsultasi Jaringan" class="service-img">
+                    </div>
+                    <h3>Konsultasi Jaringan</h3>
+                    <p>Apabila Anda bingung terkait suatu masalah jaringan, Anda dapat berkonsultasi dengan tim
+                        spesialis kami untuk menemukan solusi paling efisien.</p>
+                    <button class="btn btn-secondary open-modal-btn" data-service="konsultasi">
+                        Pelajari Lebih Lanjut <i class="fa-solid fa-chevron-right btn-icon"></i>
+                    </button>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card" data-category="server" data-reveal style="--reveal-delay: 0.3s;">
+                    <div class="service-img-wrapper">
+                        <span class="service-badge">SRV // 03</span>
+                        <img src="./images/instalasi-server.jpg" alt="Konfigurasi Server" class="service-img">
+                    </div>
+                    <h3>Konfigurasi Server</h3>
+                    <p>Konfigurasi server yang profesional untuk kebutuhan bisnis Anda dengan enkripsi berlapis, load
+                        balancing, dan backup otomatis.</p>
+                    <button class="btn btn-secondary open-modal-btn" data-service="server">
+                        Pelajari Lebih Lanjut <i class="fa-solid fa-chevron-right btn-icon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- INTERACTIVE NETWORK COST ESTIMATOR CALCULATOR -->
+            <div class="calculator-box" id="calculator" data-reveal style="--reveal-delay: 0.1s;">
+                <div class="hud-tag"><i class="fa-solid fa-sliders"></i> INTERACTIVE ESTIMATOR</div>
+                <h3 style="font-family: var(--font-heading); font-size: 1.6rem; color: black;">Kalkulator
+                    Estimasi Biaya Jaringan</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Hitung estimasi cepat untuk proyek instalasi &
+                    konfigurasi jaringan Anda.</p>
+
+                <div class="calc-grid">
+                    <div class="calc-inputs">
+                        <div class="calc-field">
+                            <label for="calc-service-type">Tipe Layanan Primary</label>
+                            <select id="calc-service-type">
+                                <option value="1500000">Instalasi Kabel & LAN Router</option>
+                                <option value="2500000">Audit & Konsultasi Arsitektur</option>
+                                <option value="4000000">Konfigurasi Server & Firewall Pro</option>
+                                <option value="6000000">Paket Enterprise Full-Stack</option>
+                            </select>
+                        </div>
+
+                        <div class="calc-field">
+                            <label for="calc-nodes">Jumlah Node / Perangkat: <span id="nodes-val"
+                                    class="range-val">10</span> Node</label>
+                            <input type="range" id="calc-nodes" min="1" max="100" value="10">
+                        </div>
+
+                        <div class="calc-field">
+                            <label for="calc-support">Tingkat Support & SLA</label>
+                            <select id="calc-support">
+                                <option value="1.0">Standard SLA (Jam Kerja)</option>
+                                <option value="1.25">Priority 24/7 (Respon 2 Jam)</option>
+                                <option value="1.5">Overdrive VIP 24/7 (Respon &lt;15 Mnt)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="calc-result">
+                        <div class="calc-price-title">ESTIMASI TOTAL INVESTASI</div>
+                        <div class="calc-price-amount" id="total-price-display">Rp 2.500.000</div>
+                        <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 16px;">*Harga final dapat
+                            menyesuaikan hasil survei fisik lokasi.</p>
+                        <a href="#contact" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">
+                            Klaim Penawaran Ini <i class="fa-solid fa-arrow-right btn-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION & DIAGNOSTIC SIMULATOR -->
+    <section id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-content" data-reveal>
+                    <div class="hud-tag"><i class="fa-solid fa-shield-halved"></i> SYSTEM MATRIX</div>
+                    <h2
+                        style="font-family: var(--font-heading); font-size: 2.4rem; font-weight: 700; margin-bottom: 16px;">
+                        Tentang Kami</h2>
+                    <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 24px;">
+                        Kami adalah penyedia jasa pembuatan dan konfigurasi jaringan yang berpengalaman dan profesional.
+                        Kami siap membantu Anda membangun arsitektur digital yang handal, aman, efisien, dan memiliki
+                        skalabilitas tinggi.
+                    </p>
+
+                    <!-- Interactive Specification Tabs -->
+                    <div class="about-tabs">
+                        <button class="tab-btn active" data-tab="arch">Arsitektur</button>
+                        <button class="tab-btn" data-tab="security">Keamanan</button>
+                        <button class="tab-btn" data-tab="sla">SLA & Guarantee</button>
+                    </div>
+
+                    <div class="tab-content active" id="tab-arch">
+                        <div class="spec-list">
+                            <div class="spec-item"><i class="fa-solid fa-check spec-icon"></i> Desain topologi Star/Mesh
+                                berperforma tinggi</div>
+                            <div class="spec-item"><i class="fa-solid fa-check spec-icon"></i> Pengabelan Cat6/Cat7 &
+                                Fiber Optik berkecepatan tinggi</div>
+                            <div class="spec-item"><i class="fa-solid fa-check spec-icon"></i> Optimasi bandwidth &
+                                MikroTik RouterOS pro configuration</div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="tab-security">
+                        <div class="spec-list">
+                            <div class="spec-item"><i class="fa-solid fa-check spec-icon"></i> Proteksi Firewall
+                                multi-layer & Anti-DDoS</div>
+                            <div class="spec-item"><i class="fa-solid fa-check spec-icon"></i> Enkripsi VPN site-to-site
+                                aman untuk cabang usaha</div>
+                            <div class="spec-item"><i class="fa-solid fa-check spec-icon"></i> Isolasi VLAN untuk
+                                jaringan tamu dan internal</div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="tab-sla">
+                        <div class="spec-list">
+                            <div class="spec-item"><i class="fa-solid fa-check spec-icon"></i> Garansi pemeliharaan
+                                hingga 12 Bulan</div>
+                            <div class="spec-item"><i class="fa-solid fa-check spec-icon"></i> Layanan tim tanggap
+                                darurat 24/7</div>
+                            <div class="spec-item"><i class="fa-solid fa-check spec-icon"></i> Monitoring kesehatan
+                                server & jaringan real-time</div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary" style="margin-top: 16px;">
+                        Pelajari Lebih Lanjut <i class="fa-solid fa-arrow-right btn-icon"></i>
+                    </a>
+                </div>
+
+                <!-- LIVE NETWORK DIAGNOSTIC WIDGET -->
+                <div class="diagnostic-panel" data-reveal style="--reveal-delay: 0.15s;">
+                    <div class="diag-header">
+                        <div class="diag-title"><i class="fa-solid fa-terminal"></i> NETWORK DIAGNOSTIC CONSOLE</div>
+                        <button class="btn btn-secondary" id="run-diag-btn"
+                            style="padding: 6px 12px; font-size: 0.75rem;">
+                            <i class="fa-solid fa-play"></i> Run Test
+                        </button>
+                    </div>
+
+                    <div class="diag-screen" id="diag-console">
+                        [SYS_INIT] Diagnostic console ready.<br>
+                        [SYS_INIT] Click 'Run Test' to initiate simulated latency & packet check...
+                    </div>
+
+                    <div class="diag-metrics">
+                        <div class="metric-box">
+                            <div class="metric-val" id="metric-ping">-- ms</div>
+                            <div class="metric-lbl">LATENCY PING</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-val" id="metric-jitter">-- ms</div>
+                            <div class="metric-lbl">JITTER</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-val" id="metric-loss">0%</div>
+                            <div class="metric-lbl">PACKET LOSS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <div class="hud-tag"><i class="fa-solid fa-comments"></i> FEEDBACK TRANSMISSIONS</div>
+                <h2>Testimoni Klien</h2>
+                <p>Apa kata mitra dan pengguna yang telah mempercayakan jaringan mereka kepada TJKT Smart Network.</p>
+                <div class="hud-line"></div>
+            </div>
+
+            <div class="testimonial-carousel" data-reveal style="--reveal-delay: 0.1s;">
+                <div class="testimonial-track" id="testimonial-track">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p class="testimonial-text">"Pengerjaan instalasi jaringan kantor kami berjalan sangat cepat dan
+                            rapi. Penataan kabel sangat profesional dan koneksi internet menjadi 10x lebih stabil tanpa
+                            lag."</p>
+                        <div class="testimonial-author">
+                            <img src="./images/network.png" alt="Client 1" class="author-avatar"
+                                onerror="this.src='./images/gundam-logo.png'">
+                            <div class="author-info">
+                                <h4>Budi Santoso</h4>
+                                <span>IT Manager // PT Teknologi Nusantara</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p class="testimonial-text">"Sangat terbantu dengan layanan konsultasi TJKT Smart Network.
+                            Masalah bottleneck jaringan yang membingungkan tim kami selama berminggu-minggu tuntas dalam
+                            sehari!"</p>
+                        <div class="testimonial-author">
+                            <img src="./images/network.png" alt="Client 2" class="author-avatar"
+                                onerror="this.src='./images/gundam-logo.png'">
+                            <div class="author-info">
+                                <h4>Siti Rahma</h4>
+                                <span>Operation Lead // Digital Hub ID</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p class="testimonial-text">"Konfigurasi server & firewall dari TJKT benar-benar mecha-grade.
+                            Keamanan data perusahaan kami terjaga maksimal dan support 24/7 mereka sangat responsif."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="./images/network.png" alt="Client 3" class="author-avatar"
+                                onerror="this.src='./images/gundam-logo.png'">
+                            <div class="author-info">
+                                <h4>Agus Widi</h4>
+                                <span>CTO // Global Commerce System</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Navigation -->
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prev-testi" aria-label="Previous Testimonial">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel-dots" id="carousel-dots">
+                        <button class="dot-btn active" data-index="0"></button>
+                        <button class="dot-btn" data-index="1"></button>
+                        <button class="dot-btn" data-index="2"></button>
+                    </div>
+                    <button class="carousel-btn" id="next-testi" aria-label="Next Testimonial">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMMAND-LINE NETWORK WORDLE MINIGAME -->
+    <section id="minigame">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <div class="hud-tag"><i class="fa-solid fa-terminal"></i> MINIGAME // RPG TERMINAL</div>
+                <h2>NETGUESS: Tebak Kata Jaringan</h2>
+                <p>Masuk ke dalam terminal simulasi dan tebak kata perangkat jaringan dalam 5 kesempatan. Hijau = huruf
+                    tepat & posisi benar, Kuning = huruf ada tapi salah posisi, Redup = tidak ada dalam kata.</p>
+                <div class="hud-line"></div>
+            </div>
+
+            <div class="game-terminal" data-reveal style="--reveal-delay: 0.1s;">
+                <div class="game-header">
+                    <div class="game-title"><i class="fa-solid fa-terminal"></i> NETGUESS://SYS-CONSOLE v1.0</div>
+                    <div class="game-actions">
+                        <button class="btn btn-secondary" id="game-hint-btn"
+                            style="padding: 6px 12px; font-size: 0.75rem;">
+                            <i class="fa-solid fa-lightbulb"></i> Hint
+                        </button>
+                        <button class="btn btn-secondary" id="game-restart-btn"
+                            style="padding: 6px 12px; font-size: 0.75rem;">
+                            <i class="fa-solid fa-rotate-right"></i> New Word
+                        </button>
+                    </div>
+                </div>
+
+                <div class="game-body">
+                    <!-- Terminal output log -->
+                    <div class="game-screen" id="game-screen">
+                        [SYS_INIT] SELAMAT DATANG DI NETGUESS TERMINAL.<br>
+                        [SYS_INIT] TEBAK KATA PERANGKAT JARINGAN SEBELUM 5 KESEMPATAN HABIS.<br>
+                        [SYS_INIT] INPUT: HANYA HURUF A-Z, PANJANG SAMA DENGAN KATA RAHASIA.<br>
+                        [SYS_INIT] RUN: KETIK TEBAKANMU DI BAWAH, LALU TEKAN ENTER.
+                    </div>
+
+                    <!-- Guess grid -->
+                    <div class="game-grid" id="game-grid"></div>
+
+                    <!-- HP / attempt bar -->
+                    <div class="game-hud">
+                        <div class="hp-label">HP / KESEMPATAN</div>
+                        <div class="hp-bar">
+                            <div class="hp-fill" id="hp-fill"></div>
+                        </div>
+                        <div class="game-word-len" id="game-word-len">PANJANG KATA: --</div>
+                    </div>
+
+                    <!-- Input line -->
+                    <div class="game-input-row">
+                        <span class="game-prompt">&gt;_</span>
+                        <input type="text" id="game-input" autocomplete="off" spellcheck="false"
+                            placeholder="Ketik tebakan jaringan..." />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <div class="hud-tag"><i class="fa-solid fa-envelope"></i> HUBUNGI KAMI</div>
+                <h2>Kontak Kami</h2>
+                <p>Siap mengoptimalkan jaringan Anda? Hubungi kami sekarang untuk berkonsultasi secara gratis.</p>
+                <div class="hud-line"></div>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info-card" data-reveal>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--text-black);">Hubungi
+                        Kami</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Tim kami siap mendengarkan kebutuhan
+                        jaringan Anda dan memberikan solusi terbaik.</p>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h4 style="font-family: var(--font-heading); color: var(--text-black);">Telepon / Hotline
+                            </h4>
+                            <p style="color: var(--text-black); font-family: var(--font-mono); font-weight: 700;">
+                                +62 851-2400-2246</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h4 style="font-family: var(--font-heading); color: var(--text-black);">Email Direct</h4>
+                            <p style="color: var(--text-black); font-family: var(--font-mono); font-weight: 700;">
+                                mumurizky6@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4 style="font-family: var(--font-heading); color: var(--text-black);">Kantor Operasional
+                            </h4>
+                            <p style="color: var(--text-muted);">TJKT Network Center No. 30, Cyber Sub-Sector ID</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form" data-reveal style="--reveal-delay: 0.15s;">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" class="form-control"
+                                placeholder="Masukkan nama Anda..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Alamat Email</label>
+                            <input type="email" id="email" name="email" class="form-control"
+                                placeholder="nama@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan / Kebutuhan Jaringan</label>
+                            <textarea id="message" name="message" class="form-control"
+                                placeholder="Tuliskan kebutuhan atau pertanyaan Anda di sini..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <span>Kirim Pesan</span>
+                            <i class="fa-solid fa-paper-plane btn-icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="#main" class="nav-brand" style="margin-bottom: 16px; display: inline-flex;">
+                        <img src="./images/gundam-logo.png" alt="TJKT Logo" class="logo-img"
+                            onerror="this.src='./images/logo.png'">
+                        <span class="brand-text">TJKT <span>SMART NETWORK</span></span>
+                    </a>
+                    <p style="max-width: 360px;">Penyedia layanan infrastruktur jaringan handal, aman, dan efisien
+                        dengan standar mecha-grade profesional.</p>
+                </div>
+
+                <div>
+                    <h4 style="font-family: var(--font-heading); color: var(--text-white); margin-bottom: 16px;">
+                        Navigasi Cepat</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 8px;">
+                        <li><a href="#main">Home</a></li>
+                        <li><a href="#services">Layanan Kami</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#testimonials">Testimoni Klien</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="font-family: var(--font-heading); color: var(--text-white); margin-bottom: 16px;">Status
+                        System</h4>
+                    <p style="font-family: var(--font-mono); color: var(--accent-cyan);"><i class="fa-solid fa-circle"
+                            style="font-size: 0.6rem;"></i> ALL NODES FUNCTIONAL</p>
+                    <p style="font-size: 0.8rem; margin-top: 8px;">Encryption: AES-256 Bit<br>Protocol: IPv6 Native</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 TJKT Smart Network 30. All Rights Reserved. Built with Modern Yellow Gundam Architecture.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SERVICE DETAIL MODAL -->
+    <div class="modal-overlay" id="service-modal">
+        <div class="modal-container">
+            <button class="modal-close" id="modal-close-btn">&times;</button>
+            <div class="hud-tag" id="modal-badge">SERVICE SPECIFICATION</div>
+            <h3 id="modal-title"
+                style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 16px; color: var(--text-white);">
+                Detail Layanan</h3>
+            <div id="modal-body"
+                style="color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin-bottom: 24px;">
+                Deskripsi detail layanan akan muncul di sini...
+            </div>
+            <a href="#contact" class="btn btn-primary" id="modal-cta-btn" style="width: 100%;">
+                Konsultasikan Layanan Ini <i class="fa-solid fa-arrow-right btn-icon"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- FLOATING HUD CONTROLS (SOUND FX & OVERDRIVE MODE) -->
+    <div class="floating-hud">
+        <button class="hud-btn" id="sound-toggle-btn" title="Toggle Tactical Audio FX">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+        <button class="hud-btn" id="overdrive-toggle-btn" title="Toggle Overdrive Yellow Mode">
+            <i class="fa-solid fa-bolt"></i>
+        </button>
+    </div>
+
+    <!-- TOAST NOTIFICATION POPUP -->
+    <div class="toast-notification" id="toast">
+        <i class="fa-solid fa-circle-check" style="color: var(--gundam-yellow); font-size: 1.2rem;"></i>
+        <span id="toast-message">Transmisi Berhasil Dikirim!</span>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script src="index.js"></script>
+    <script async type='module'
+        src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+    <zapier-interfaces-chatbot-embed is-popup='true' chatbot-id='cmsh1l98l0036tzkamadkylzg'
+        class="zapier-bot"></zapier-interfaces-chatbot-embed>
+</body>
+
+</html>

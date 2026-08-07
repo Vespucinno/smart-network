@@ -526,6 +526,38 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ==========================================
+    // 9.5 FAQ ACCORDION
+    // ==========================================
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const questionBtn = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+
+        if (questionBtn && answer) {
+            questionBtn.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+
+                // Close all others
+                faqItems.forEach(other => {
+                    const otherAnswer = other.querySelector('.faq-answer');
+                    other.classList.remove('active');
+                    if (otherAnswer) otherAnswer.style.maxHeight = null;
+                });
+
+                // Toggle the clicked one
+                if (!isActive) {
+                    item.classList.add('active');
+                    answer.style.maxHeight = `${answer.scrollHeight}px`;
+                    playPop('click');
+                } else {
+                    playPop('toggle');
+                }
+            });
+        }
+    });
+
+    // ==========================================
     // 10. COMMAND-LINE NETWORK WORDLE MINIGAME (NETGUESS)
     // ==========================================
     const gameScreen = document.getElementById('game-screen');
